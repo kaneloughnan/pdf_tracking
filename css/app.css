@@ -1,0 +1,186 @@
+@font-face {
+  font-family: RobotoMedium;
+  src: url('../fonts/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url('../fonts/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: RobotoThin;
+  src: url('../fonts/Roboto-Thin.ttf');
+}
+@font-face {
+  font-family: RobotoRegular;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body{
+  background: #fafafa;
+  font-size: 12px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #707478;
+}
+
+#header{
+  background-color:#065687;
+  height:60px;
+  padding:13px 15px;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.3);
+  box-shadow: 0 0 2px rgba(0,0,0,.3);
+}
+#header img{
+  height:34px;
+}
+#header .btn-group{
+  float:right;
+}
+#header .btn-group button{
+  padding:6px;
+  background-color:#063653;
+}
+
+#header .btn-group button:hover{
+  background-color:#3F7DA2;
+}
+
+input, textarea, select{
+  display:block;
+  margin-bottom:10px;
+  width:100%;
+}
+textarea{
+  height:200px;
+}
+
+button{
+  color:#fff;
+  background-color:#57C5CB;
+  border-radius:2px;
+  border:none;
+  padding:20px;
+  font-weight:bold;
+}
+
+.content{
+  padding:15px;
+}
+
+.category{
+  border-radius:2px;
+  width:32%;
+  border:1px solid rgba(0,0,0,0.4);
+  display:inline-block;
+  margin-bottom:10px;
+  vertical-align:top;
+}
+.category:nth-child(2n + 2){
+  margin:0 2%;
+}
+.category .heading{
+  padding:8px;
+  border-bottom:1px solid #333;
+  background-color:#57C5CB;
+  color:#fff;
+}
+.category .content{
+  padding:8px;
+}
+
+#addUserSuccess, #addModuleSuccess{
+  color: #3c763d;
+  background-color: #dff0d8;
+  padding:12px;
+  margin-bottom:12px;
+  display:none;
+}
+
+label.error{
+  color:#b94a48;
+  margin:-5px 0 10px 0;
+  display:block;
+}
+
+table td, table th{
+  padding:6px;
+}
+
+#finishBtn{
+  display:none;
+  width:auto;
+  position:fixed;
+  bottom:10px;
+  left:50%;
+  margin-left:-100px;
+  z-index:999;
+}
+
+.control-label{
+  text-align:right;
+  padding-top:7px;
+}
+
+.checkTd, .checkboxTd{
+  font-size:18px;
+  text-align:center;
+}
+.buttonTd, .checkboxTd{
+  text-align:center;
+}
+.buttonTd input[type="button"]{
+  width:auto;
+}
+.checkboxTd input[type="checkbox"]{
+  width:16px;
+  height:16px;
+  margin:0 auto;
+}
+
+.sortText{
+  display:none;
+}
+
+label[for="assignAllNewModules"], label[for="assignAllExistingModules"]{
+  float:right;
+}
+#assignAllNewModules, #assignAllExistingModules{
+  display:inline;
+  width:auto;
+}
+
+@media screen and (max-width: 900px){
+  .category{
+width:49%;
+  }
+  .category:nth-child(2n + 2){
+margin:0 auto;
+  }
+  .category:nth-child(even){
+margin-left:2%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .category{
+width:100%;
+  }
+  .category:nth-child(even){
+margin-left:auto;
+  }
+}
+#accordion input{
+  margin-bottom:0;
+}
+#accordion .row{
+  margin: 15px 0px 5px 0px;
+}
+#accordion .row:last-of-type{
+  margin-bottom:15px;
+}
+#accordion label{
+  min-width: 145px;
+  text-align: left;
+}
+#accordion label.error{
+  padding-top: 10px;
+}
